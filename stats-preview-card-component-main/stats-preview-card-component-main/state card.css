@@ -4,16 +4,36 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
 }
+/* varibles for color */
 :root {
   --accent: hsl(277, 64%, 61%);
   --paragraph: hsla(0, 0%, 100%, 0.75);
   --stats: hsla(0, 0%, 100%, 0.6);
-  --background: hsl(233, 47%, 7%);
+  --main-bg: hsl(233, 47%, 7%);
+  --card-bg: hsl(244, 38%, 16%);
+  --main-hd: hsl(0, 0%, 100%);
 }
 
-body {
-  background: var(--background);
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: var(--main-bg);
+  color: var(--main-hd);
+  color: var(--stats);
+  color: var(--paragraph);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 70vw;
+  background: var(--card-bg);
+  border-radius: 7px;
+  display: flex;
 }
 
 .highlight {
@@ -22,4 +42,14 @@ body {
 
 .stats {
   font-family: 'Lexend Deca', sans-serif;
+}
+
+.card .cardInfo {
+  width: 50vw;
+  padding: 5rem;
+}
+
+.card .image {
+  width: 50%;
+  background: url(images/image-header-desktop.jpg);
 }
