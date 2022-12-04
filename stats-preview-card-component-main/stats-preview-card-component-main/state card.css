@@ -21,10 +21,11 @@
   width: 100vw;
   height: 100vh;
   background: var(--main-bg);
-  color: var(--main-hd);
+  /* color: var(--main-hd);
   color: var(--stats);
   color: var(--paragraph);
-  display: flex;
+  display: flex; */
+  color: white;
   align-items: center;
   justify-content: center;
 }
@@ -33,7 +34,6 @@
   width: 70vw;
   background: var(--card-bg);
   border-radius: 7px;
-  display: flex;
 }
 
 .highlight {
@@ -45,11 +45,16 @@
 }
 
 .card .cardInfo {
-  width: 50vw;
-  padding: 5rem;
+  width: 50%;
+  padding: 3rem;
 }
 
-.card .image {
+.card .cardImage {
   width: 50%;
-  background: url(images/image-header-desktop.jpg);
+  background: linear-gradient(
+      0deg,
+      hsla(277, 64%, 61%, 0.5) 0%,
+      hsla(277, 64%, 61%, 0.5) 100%
+    ),
+    url(images/image-header-desktop.jpg);
 }
