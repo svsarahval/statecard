@@ -21,12 +21,12 @@ body {
  color:hsla(0, 0%, 100%, 0.75);
  align-items: center;
  justify-content: space-around;
- padding: 20px;
+ padding: 28px;
 }
 
 .subtitle {
  display: flex;
- justify-content: center;
+ color:hsla(0, 0%, 100%, 0.75) ;
 }
 
 .highlight {
@@ -34,7 +34,6 @@ body {
 }
 
 .container {
-  /* max-width: 1020px; */
   display: flex;
   margin: 0;
   width: 1110vw;
@@ -43,12 +42,7 @@ body {
 .card {
   background-color: hsl(244, 38%, 16%);
   display: flex;
-  /* grid-template-columns: 1fr 1fr;
-  border-radius: 15px;
-  overflow: hidden;
-  margin: 2rem; */
   flex-direction: space-between;
-
 }
 
 .desktop img {
@@ -62,7 +56,6 @@ body {
 }
 
 .desktop::after {
-  /* position: absolute; */
   content: "";
   height: 100%;
   width: ;
@@ -72,16 +65,30 @@ body {
 }
 
 .stats {
-  font-family: 'Lexend Deca', sans-serif;
+   sans-serif;
   display: flex;
+  justify-content: space-between;
 }
 
 .num {
  display:flex;
  justify-content: space-between;
+ align-items: center;
+ margin-bottom: 0px;
+ margin-left: 22px;
+ 
+ 
 }
 
-.name {
- display: flex;
+ .name {
+  display: flex; 
  justify-content: space-between;
+align-items: center;
+ margin: 22px;
+ margin-top: 0;
+ margin-right: 28px;
+ font-family: 'Lexend Deca';
+ font-size: 14px;
+ color: hsla(0, 0%, 100%, 0.6);
+ 
 }
